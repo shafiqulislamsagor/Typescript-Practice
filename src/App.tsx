@@ -2,6 +2,7 @@ import './App.css';
 import Greet from './components/Greet';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
+import Status from './components/Status';
 
 function App() {
   const personValue:{fastName:string ,lastName:string} = {
@@ -19,6 +20,9 @@ function App() {
       <Greet messageCount={10} name='sagor' studentBoolean/>
       <Person person={personValue}/>
       <PersonList list={personlist}/>
+      <Status status='loading'/>
+      <Status status='success'/>
+      <Status status='error'/>
     </div>
   );
 }
