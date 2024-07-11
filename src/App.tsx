@@ -1,6 +1,7 @@
 import "./App.css";
 import Button from "./components/Button";
 import Container from "./components/Container";
+import NumberCount from "./components/counter/NumberCount";
 import Form from "./components/Form";
 import Greet from "./components/Greet";
 import Input from "./components/Input";
@@ -47,9 +48,10 @@ function App() {
         <Container styles={{background:"black" , padding:'4px 5px' , color:'white'}} Twd="p-2 border"/>
         <LoggedIn/>
         <User name="sagor" email="sagor@example.com"/>
+        <Counter/>
+        <NumberCount/>
       </div>
       <div>
-        <Counter/>
       </div>
     </>
   );
