@@ -6,6 +6,7 @@ import Greet from "./components/Greet";
 import Input from "./components/Input";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import LoggedIn from "./components/state/LoggedIn";
 import Status from "./components/Status";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Input value="" handleChange={(event) => console.log(event)} />
         <Form name={named} handleFrom={FormHandleClick}/>
         <Container styles={{background:"black" , padding:'4px 5px' , color:'white'}} Twd="p-2 border"/>
+        <LoggedIn/>
       </div>
       <div>
       </div>
